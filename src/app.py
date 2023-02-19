@@ -14,7 +14,7 @@ def sin(a, t, f):
 
 
 app.layout = dbc.Container([
-    html.H1('FFT with Dash and Polars'),
+    html.H1('FFT with Dash Plotly'),
 
     dbc.Row([
         dbc.Col([
