@@ -43,7 +43,7 @@ app.layout = dbc.Container([
         ]),
     ]),
 
-    html.Div('Choose sampling frequency for (signal1 + signal2):'),
+    html.Div('Choose sampling rate for (signal1 + signal2):'),
     dcc.Slider(0, 16, value=8, id='slider_sample_freq', tooltip={"placement": "bottom"}),
 
     dbc.Col([
@@ -85,7 +85,7 @@ def update_signal(amp1, freq1, amp2, freq2, sampling_freq):
     fig_signals = px.line(df,
                           x='t',
                           y=df.columns[1:],
-                          labels={'x': 't', 'value': 'sin(2*pi*t*f)'},
+                          labels={'x': 't', 'value': 'A*sin(2*pi*f*t)'},
                           title='Signals'
                           )
 
