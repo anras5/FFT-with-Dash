@@ -19,7 +19,7 @@ app.layout = html.Div([
     Input(component_id='my-input', component_property='value')
 )
 def update_output_div(input_value):
-    return f'Output: {input_value}'
+    return f'Wartość wyjściowa: {input_value}'
 
 
 if __name__ == '__main__':
